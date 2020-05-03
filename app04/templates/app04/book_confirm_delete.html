@@ -1,0 +1,12 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+    <h1>Apagar Livro</h1>
+    <p>Tem certeza que deseja apagar o livro: {{ book }}?</p>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Apagar">
+    </form>
+{% endblock %}

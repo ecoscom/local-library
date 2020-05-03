@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block title %}
+<title>Biblioteca 2.0</title>
+{% endblock %}
+
+{% block content %}
+<h1>Biblioteca Local</h1>
+<p>Bem-vindo ao site da Biblioteca...</p>
+<h2>Conteúdo dinâmico</h2>
+<p>A livraria têm os seguintes números de registros</p>
+<ul>
+    <li><strong>Livros: </strong>{{ num_books }}</li>
+    <li><strong>Cópias: </strong>{{ num_instances }}</li>
+    <li><strong>Cópias disponíveis: </strong>{{ num_instances_available }}</li>
+    <li><strong>Autores: </strong>{{ num_authors }}</li>
+    <li><strong>Gêneros: </strong>{{ num_genres }}</li>
+    <li><strong>Livros "livros": </strong>{{ num_books_contains }}</li>
+    <li><strong>Visitas: </strong>{{ num_visits }}</li>
+</ul>
+{% endblock %}
